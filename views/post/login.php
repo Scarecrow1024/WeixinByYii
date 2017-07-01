@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="telephone=no,email=no" name="format-detection">
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script type="text/javascript">
 
@@ -88,11 +88,11 @@
                         </div>
                         </literal>
                         <div class="col-xs-4" style="line-height: 30px;padding: 0px;">
-                            <img src="/post/verify" alt="点击获取" id="imgId" style="height: 27px;" onclick="this.src='/post/verify?'+Math.random()">
+                            <img src="" alt="点击获取验证码" id="imgId" style="height: 27px;" onclick="this.src='/post/verify?'+Math.random()">
                         </div>
-                        <div class="col-xs-4" style="line-height: 30px;padding: 0px;">
+                        <!-- <div class="col-xs-4" style="line-height: 30px;padding: 0px;">
                             <input type="button" id="verify" class="btn btn-info btn-sm " onclick="this.src='/post/verify?'+Math.random()" value="看不见换张">                      
-                        </div>
+                        </div> -->
                     </div>
 
                     <input type="submit" class="btn btn-success" id="buttonId" name="submit" value="查询">
