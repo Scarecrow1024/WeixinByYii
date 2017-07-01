@@ -1,0 +1,198 @@
+﻿@font-face {
+  font-family: 'gaifont';   /*字体名称*/
+  src: url('../font/华康娃娃体W5.ttf');       /*字体源文件*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 solid #000;
+}
+
+html,body,h1,h2,h3,h4,input,p,ul{
+    margin: 0;
+    padding: 0;
+}
+html{
+    -webkit-text-size-adjust: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+    font-family: "Microsoft YaHei";
+    color: #ADADAD;
+}
+a{
+	color: #666666;
+	text-decoration: none;
+}
+
+/*message*/
+.message{
+    top:0;
+    background:#ffee83;
+    color:#7c6045;
+    width:100%;
+    margin:0 auto;
+    padding:8px 0;
+    border-bottom:1px solid #ecca82;
+    font-size:14px;
+    text-align: center;
+    line-height:1.5;
+}
+.message-box{
+    top:50px;
+    background:#ffee83;
+    color:#7c6045;
+    width:480px;
+    margin:50px auto;
+    padding:8px 0;
+    border-radius:10px;
+    border:1px solid #ecca82;
+    font-size:14px;
+    text-align: center;
+    line-height:50px;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+input{
+	outline: none;
+}
+.w1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*登录状态*/
+.icon-mber1{ display: inline-block; width: 21px; height: 18px; background: url(../img/member.png) 0 0px no-repeat; vertical-align: middle; margin-left: 9px; position: relative; top: -1px; }
+.ring { font-size: 13.34px; line-height: 29px; padding: 0 9px; position: relative; z-index: 11; }
+.ring:hover{ background: #ec503e; } .ring:hover ul{ display: block; }
+.ring>ul{ display: none; position: absolute; width: 170px; z-index: 6; font-size: 14px; top: 0; color: #666; padding-top: 2px; top: 28px; left: 50%; margin-left: -85px; box-shadow: 0 0 15px rgba(0,0,0,0.2); }
+.ring ul li{ background: #fff; height: 40px; line-height: 40px; }
+.ring ul li:hover{ background: #f6f6f6; }
+.ring ul li a{ display: block; width: 100%;  padding-left: 15px; color: #666; height: 100%; box-sizing: border-box;}
+.ring ul li .iconfont{ padding-right: 9px; }
+.ring ul li:hover .iconfont{ color: #ec503e; background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(251, 104, 71, 1)), to(rgba(245, 130, 47, 1))); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.ring ul .ring-title { height: 72px; background: #f6f6f6; }
+.ring ul .ring-title img{ border-radius: 50%; width: 45px; height: 45px; float: left; overflow: hidden; border: none; margin: 12px 12px 0 10px; }
+.ring ul .ring-title span{ display: inline-block; margin-top: 4px;}
+.ring-id{ color: #999999; position: relative; top: -23px;}
+.icon-uli span{ width: 18px; height: 16px; background: url(../img/member.png) 0 -71px no-repeat; display: inline-block; padding-right: 9px; vertical-align: middle; position: relative; top: -1px; }
+.icon-mber2{ display: inline-block; width: 21px; height: 18px; background: url(../img/member.png) 0 -21px no-repeat; vertical-align: middle; margin-left: 9px; position: relative; top: -1px; }
+.icon-mber3{ display: inline-block; width: 21px; height: 24px; background: url(../img/member.png) 0 -44px no-repeat; vertical-align: middle; margin-left: 9px; position: relative; top: -3px; }
+.ring-home{ line-height: 39px; border-top: 1px solid #e1e1e1; }
+
+
+/*header*/
+.header{
+    height: 29px;
+    line-height: 29px;
+    background: #f98463;
+    background: -moz-linear-gradient(left,  #F98463 0%, #F7786A 100%);
+    background: -webkit-linear-gradient(left,  #F98463 0%,#F7786A 100%);
+    background: linear-gradient(to right,  #F98463 0%,#F7786A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98463', endColorstr='#f7786a',GradientType=1 );
+}
+.header-content{
+	color: #fff;
+}
+.header-content>span{
+	font-size:22px;
+}
+.header-content-a{
+	display: inline-block;
+	height: 29px;
+	width: 88px;
+	font-size: 14px;
+	text-align:center;
+	line-height:29px;
+	color: #fff;
+}
+
+.hander-nav li {
+    float: left;
+    height: 100%;
+}
+
+.hander-nav li a {
+    display: block;
+    font-size: 13.34px;
+    color: #fff;
+    padding: 0 21px;
+    height: 100%;
+}
+
+.hander-nav li a:hover {
+    color: #cc0000;
+}
+
+.hander-nav li a:after {
+    float: left;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    margin-top: 7.5px;
+    margin-left: -21px;
+    background: #fbbdae;
+}
+
+.hander-nav li .hander-nav-title {
+    padding-left: 1px;
+}
+
+.hander-nav li .hander-nav-title:after {
+    content: '';
+    display: none;
+}
+
+
+.btn-logout{
+    height:100%;
+    width:100%;
+    background:none;
+    border:0;
+    color:#666;
+    outline:none;
+    padding-left:15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.btn-logout:hover{
+    background: #f6f6f6;
+}
