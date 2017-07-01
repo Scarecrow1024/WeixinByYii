@@ -73,7 +73,7 @@ class PostController extends \yii\web\Controller
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
-			    'timeout' => 5,
+			    'timeout' => 3,
 			]);
 			//获取到TWFID
 			$twfid = [];
@@ -96,7 +96,7 @@ class PostController extends \yii\web\Controller
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
-			    'timeout' => 5,
+			    'timeout' => 1,
 			]);
 			//获取到websvr_cookie
 			$response = $client->request('get', 'https://vpn.hpu.edu.cn/web/1/http/0/218.196.240.97/', [
@@ -105,7 +105,7 @@ class PostController extends \yii\web\Controller
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
-			    'timeout' => 5,
+			    'timeout' => 1,
 			]);
 			$websvr_cookie = [];
 			foreach ($response->getHeaders() as $name => $values) {
@@ -123,7 +123,7 @@ class PostController extends \yii\web\Controller
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
-			    'timeout' => 5,
+			    'timeout' => 1,
 			]);
 			$body = $response->getBody();
 			$enable = $jar->getCookieByName('ENABLE_RANDCODE')->toArray();
