@@ -44,7 +44,7 @@
 	}
   </style>
   	<blockquote>
-	  <p>本学期成绩查询</p>
+	  <p>期末成绩查询</p>
 	  <footer style="text-align: right">Created By <cite title="Source Title">Janfer</cite></footer>
 	</blockquote>
   <body class="animated rollIn">
