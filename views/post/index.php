@@ -37,8 +37,8 @@
       text-align: center;
     }
     blockquote {
-	    padding: 10px 15px;
-	    margin: 0 0 5px;
+	    padding: 10px 18px;
+	    margin: 0 0 2px;
 	    font-size: 17.5px;
 	    border-left: 5px solid #A3A5CA;
 	}

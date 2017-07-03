@@ -105,8 +105,8 @@
     </div>
     <br>
     <div class="col-xs-12 " style="text-align: left;">          
-        <strong style="color: red">1.服务器资源紧张并且教务处有登录人数限制,所以不能成功查询时还请谅解</strong><br>  
-        <strong style="color: red">2.为了节约带宽成绩展示页面将只展示文字加载样式</strong><br>
+        <strong style="color: gray">1.服务器资源紧张并且教务处有登录人数限制,所以会出现登录不成功的情况</strong><br>  
+        <strong style="color: blue">2.手快有手慢无输完学号密码后再点击验证码,验证码请尽量在5秒内输完</strong><br>
     </div>
     <footer>
         &copy;HPU小微提供<br>
