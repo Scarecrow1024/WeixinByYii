@@ -1,7 +1,7 @@
 <?php
 
 // comment out the following two lines when deployed to production
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_DEBUG') or define('YII_DEBUG', false);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 ini_set('session.cookie_path', '/');
 ini_set('session.cookie_domain', '.yiidemo.com'); //注意domain.com换成你自己的域名

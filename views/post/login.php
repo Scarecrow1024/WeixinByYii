@@ -31,9 +31,9 @@
             /*$('#imgId').click(function() {
                 $("#imgId").attr('src',"/post/verify");
             });*/
-            /*$('#verify').click(function() {
+            $('#verify').click(function() {
                 $("#imgId").attr('src','/post/verify');
-            });*/
+            });
 
             /* 数据校验 */
             $('#buttonId').click(function() {
