@@ -27,4 +27,19 @@ class HelloController extends Controller
     {
         echo $message . "\n";
     }
+    public function actionPing(){
+    	while(true){
+    		$ch = curl_init();
+	    	$url = 'http://ifreehand.hequanxi.com/index.php?s=/addon/Studentscore/Studentscore/vpnloginjwc.html';
+	    	curl_setopt($ch,CURLOPT_URL,$url);
+	        curl_setopt($ch, CURLOPT_HEADER, 1);
+	        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
+	        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0");
+	        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+	        curl_exec($ch);
+	        curl_close($ch);
+	        sleep(2);
+    	}
+    }
+    	
 }
