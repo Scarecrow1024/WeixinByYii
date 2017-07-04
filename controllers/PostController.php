@@ -59,7 +59,7 @@ class PostController extends \yii\web\Controller
 			$jar = new \GuzzleHttp\Cookie\CookieJar();
 			$response = $client->request('get', '/por/login_psw.csp', [
 			    'headers' => [
-			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0',
+			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400',
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
@@ -78,7 +78,7 @@ class PostController extends \yii\web\Controller
 			$response = $client->request('post', '/por/login_psw.csp?sfrnd=2346912324982305', [
 			    'headers' => [
 			    	'REFERER' => 'https://vpn.hpu.edu.cn/por/login_psw.csp',
-			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0',
+			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400',
 			    ],
 			    'form_params' => [
 			        'svpn_name' => $arr[$ran][0],
@@ -91,7 +91,7 @@ class PostController extends \yii\web\Controller
 			//获取到websvr_cookie
 			$response = $client->request('get', 'https://vpn.hpu.edu.cn/web/1/http/0/218.196.240.97/', [
 			    'headers' => [
-			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0',
+			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400',
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
@@ -109,7 +109,7 @@ class PostController extends \yii\web\Controller
 			$response = $client->request('get', 'https://vpn.hpu.edu.cn/web/1/http/1/218.196.240.97/validateCodeAction.do', [
 			    'headers' => [
 			    	'REFERER' => 'https://vpn.hpu.edu.cn/por/login_psw.csp',
-			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0',
+			        'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400',
 			    ],
 			    'cookies' => $jar,
 			    'verify' => false,
@@ -150,7 +150,7 @@ class PostController extends \yii\web\Controller
 		        curl_setopt($ch,CURLOPT_REFERER,"https://vpn.hpu.edu.cn/web/1/http/0/218.196.240.97/");
 		        curl_setopt($ch, CURLOPT_HEADER, 1);
 		        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
-		        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0");
+		        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400");
 		        curl_setopt($ch,CURLOPT_COOKIE,"$websvr_cookie;$enable_rand;$twfid");
 		        curl_setopt($ch,CURLOPT_POST,1);
 		        curl_setopt($ch,CURLOPT_POSTFIELDS,$params);
@@ -191,7 +191,7 @@ class PostController extends \yii\web\Controller
         curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
         curl_setopt($ch,CURLOPT_REFERER,"https://vpn.hpu.edu.cn/por/login_psw.csp");
-        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0");
+        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400");
         curl_setopt($ch,CURLOPT_COOKIE,"$websvr_cookie;$enable_rand;$twfid");
         setcookie("TWFID","deleted");
         setcookie("expires","Saturday, 16-Jan-16 13:41:29 GMT");
@@ -210,7 +210,7 @@ class PostController extends \yii\web\Controller
 	        curl_setopt($ch,CURLOPT_REFERER,"https://vpn.hpu.edu.cn/web/1/http/1/218.196.240.97/loginAction.do");
 	        curl_setopt($ch, CURLOPT_HEADER, 1);
 	        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
-	        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0");
+	        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400");
 	        curl_setopt($ch,CURLOPT_COOKIE,"$websvr_cookie;$enable_rand;$twfid");
 	        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 	        $content=curl_exec($ch);
@@ -232,7 +232,7 @@ class PostController extends \yii\web\Controller
 	        curl_setopt($ch,CURLOPT_REFERER,"https://vpn.hpu.edu.cn/web/1/http/1/218.196.240.97/loginAction.do");
 	        curl_setopt($ch, CURLOPT_HEADER, 0);
 	        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
-	        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0");
+	        curl_setopt($ch,CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.556.400 QQBrowser/9.0.2524.400");
 	        curl_setopt($ch,CURLOPT_COOKIE,"$websvr_cookie;$enable_rand;$twfid");
 	        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 	        $content=curl_exec($ch);
