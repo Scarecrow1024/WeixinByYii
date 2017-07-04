@@ -13,7 +13,20 @@
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script type="text/javascript">
-
+        //禁止显示连接
+        function onBridgeReady(){
+            WeixinJSBridge.call('hideOptionMenu');
+        } 
+        if (typeof WeixinJSBridge == "undefined"){
+        if(document.addEventListener ){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if (document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            }
+        }else{
+            onBridgeReady();
+        }
     </script>
     <style>
         .row{margin: 0px;}

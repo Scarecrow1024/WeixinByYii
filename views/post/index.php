@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
   </head>
-  <script type="text/javascript">
+<script type="text/javascript">
   //禁止显示连接
 	function onBridgeReady(){
 	    WeixinJSBridge.call('hideOptionMenu');
@@ -26,26 +26,26 @@
 		onBridgeReady();
 	}
 </script>
-  <style>
-  	td{
-  		text-align: center;
-  	}
-    #footer{
-      background-color:#BCD2EE;
-      color:#666;position: fixed;
-      bottom: 0px;width: 100%;padding: 10px;
-      text-align: center;
-    }
-    blockquote {
-	    padding: 10px 18px;
-	    margin: 0 0 2px;
-	    font-size: 17.5px;
-	    border-left: 5px solid #A3A5CA;
+<style>
+	td{
+		text-align: center;
 	}
-  </style>
-  	<blockquote>
+  #footer{
+    background-color:#BCD2EE;
+    color:#666;position: fixed;
+    bottom: 0px;width: 100%;padding: 10px;
+    text-align: center;
+  }
+  blockquote {
+    padding: 8px 16px;
+    margin: 0 0 2px;
+    font-size: 17.5px;
+    border-left: 5px solid #A3A5CA;
+  }
+</style>
+  <blockquote>
 	  <p>期末成绩查询</p>
-	  <footer style="text-align: right">Created By <cite title="Source Title">Janfer</cite></footer>
+	<footer style="text-align: right">Designed By <cite title="Source Title">Janfer</cite></footer>
 	</blockquote>
   <body class="animated rollIn">
   	<table class="table table-striped table-bordered table-hover">
