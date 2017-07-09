@@ -109,20 +109,41 @@
                     </div>
 
                     <input type="submit" class="btn btn-success" id="buttonId" name="submit" value="查询">
+                </literal>
                 </form>
-            </div>
-            
-            <!-- 脚注 -->
-                    
+            </div>          
         </div>
     </div>
     <br>
-    <div class="col-xs-12 " style="text-align: left;">          
+    <div class="col-xs-12" style="text-align: left;">          
         <strong style="color: gray">1.服务器资源紧张并且教务处有登录人数限制,所以会出现登录不成功的情况</strong><br>  
-        <strong style="color: blue">2.手快有手慢无输完学号密码后再点击验证码,验证码请尽量在5秒内输完</strong><br>
+        <strong style="color: blue">2.手快有手慢无输完学号密码后再点击验证码,验证码请尽量在5秒内输完</strong><br>   
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading" onclick="adviced(this)" style="
+    margin-top: 15%;">
+        <span style="float: right;" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        <h3 class="panel-title">为了不影响体验广告默认隐藏，点我可查看广告</h3>
+      </div>
+      <div class="panel-body" hidden="hidden">
+        <a href="http://mp.weixin.qq.com/s/liDD-2PxOh271K0Pu1JMvQ "><img style="width: 100%;height: 100px;" src="/img/20170709233749.jpg" alt=""></a>
+      </div>
     </div>
     <footer>
         &copy;HPU小微提供<br>
     </footer>
 </body>
+<script>
+    function adviced(panel){
+        if($(panel).next().attr('hidden')=="hidden"){
+            $(panel).next().removeAttr('hidden');
+            $('.glyphicon-plus').attr('class', 'glyphicon glyphicon-minus');
+        }else{
+            $(panel).next().attr('hidden','hidden');
+            $('.glyphicon-minus').attr('class', 'glyphicon glyphicon-plus');
+        }
+        
+    }
+</script>
 </html>
