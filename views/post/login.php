@@ -63,6 +63,15 @@
 </head>
 
 <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/jquery.share.min.js"></script>
+<div class="social-share"></div>
+
+<div class="social-share">
+    <a href="#" class=" icon-weibo"></a>
+    <a href="#" class=" icon-qq"></a>
+    <a href="#" class=" icon-qzone"></a>
+</div>
     <!-- 头部 -->
     <div class="row" id="navid">
         <div class="col-xs-12" style="text-align: center;">

@@ -12,15 +12,25 @@ class ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1
     );
 
     public static $prefixLengthsPsr4 = array (
+        'z' => 
+        array (
+            'zhuravljov\\yii\\queue\\sync\\' => 26,
+            'zhuravljov\\yii\\queue\\redis\\' => 27,
+            'zhuravljov\\yii\\queue\\gearman\\' => 29,
+            'zhuravljov\\yii\\queue\\file\\' => 26,
+            'zhuravljov\\yii\\queue\\db\\' => 24,
+            'zhuravljov\\yii\\queue\\beanstalk\\' => 31,
+            'zhuravljov\\yii\\queue\\amqp\\' => 26,
+            'zhuravljov\\yii\\queue\\' => 21,
+        ),
         'y' => 
         array (
             'yii\\swiftmailer\\' => 16,
+            'yii\\sphinx\\' => 11,
             'yii\\redis\\' => 10,
-            'yii\\guzzle\\' => 10,
+            'yii\\mongodb\\' => 12,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
-            'yii\\mongodb\\' => 12,
-            'yii\\sphinx\\' => 12,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\codeception\\' => 16,
@@ -35,24 +45,52 @@ class ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1
         array (
             'Faker\\' => 6,
         ),
-        'G' => 
-        array (
-            'GuzzleHttp\\' => 6,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'zhuravljov\\yii\\queue\\sync\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/sync',
+        ),
+        'zhuravljov\\yii\\queue\\redis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/redis',
+        ),
+        'zhuravljov\\yii\\queue\\gearman\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/gearman',
+        ),
+        'zhuravljov\\yii\\queue\\file\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/file',
+        ),
+        'zhuravljov\\yii\\queue\\db\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/db',
+        ),
+        'zhuravljov\\yii\\queue\\beanstalk\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/beanstalk',
+        ),
+        'zhuravljov\\yii\\queue\\amqp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src/drivers/amqp',
+        ),
+        'zhuravljov\\yii\\queue\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zhuravljov/yii2-queue/src',
+        ),
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
         ),
+        'yii\\sphinx\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-sphinx',
+        ),
         'yii\\redis\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-redis',
-        ),
-        'yii\\guzzle\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/guzzle-master/src',
         ),
         'yii\\mongodb\\' => 
         array (
@@ -82,14 +120,6 @@ class ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap',
         ),
-        'yii\\mongodb\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-mongodb',
-        ),
-        'yii\\sphinx\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-sphinx',
-        ),
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
@@ -101,10 +131,6 @@ class ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzle/src/GuzzleHttp',
         ),
     );
 

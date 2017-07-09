@@ -6,10 +6,18 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'zhuravljov\\yii\\queue\\sync\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/sync'),
+    'zhuravljov\\yii\\queue\\redis\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/redis'),
+    'zhuravljov\\yii\\queue\\gearman\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/gearman'),
+    'zhuravljov\\yii\\queue\\file\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/file'),
+    'zhuravljov\\yii\\queue\\db\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/db'),
+    'zhuravljov\\yii\\queue\\beanstalk\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/beanstalk'),
+    'zhuravljov\\yii\\queue\\amqp\\' => array($vendorDir . '/zhuravljov/yii2-queue/src/drivers/amqp'),
+    'zhuravljov\\yii\\queue\\' => array($vendorDir . '/zhuravljov/yii2-queue/src'),
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\sphinx\\' => array($vendorDir . '/yiisoft/yii2-sphinx'),
     'yii\\redis\\' => array($vendorDir . '/yiisoft/yii2-redis'),
     'yii\\mongodb\\' => array($vendorDir . '/yiisoft/yii2-mongodb'),
-    'yii\\sphinx\\' => array($vendorDir . '/yiisoft/yii2-sphinx'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -19,5 +27,4 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
-    'GuzzleHttp\\' => array($vendorDir . '/guzzle/src/GuzzleHttp'),
 );

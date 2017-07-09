@@ -20,7 +20,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "yiisoft/yii2-redis": "^2.0",
         "yiisoft/yii2-mongodb": "^2.1",
-        "yiisoft/yii2-sphinx": "^2.0"
+        "yiisoft/yii2-sphinx": "^2.0",
+        "zhuravljov/yii2-queue": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
