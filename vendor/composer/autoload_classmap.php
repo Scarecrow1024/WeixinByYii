@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'TesseractOCR' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/TesseractOCR.php',
 );

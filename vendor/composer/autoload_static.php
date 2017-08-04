@@ -151,12 +151,17 @@ class ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1
         ),
     );
 
+    public static $classMap = array (
+        'TesseractOCR' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/TesseractOCR.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit868b7e2196c2f79c1242a3fca7f08df1::$classMap;
 
         }, null, ClassLoader::class);
     }

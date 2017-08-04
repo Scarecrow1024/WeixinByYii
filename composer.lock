@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1e34dbf1816592cfec2021e46a841d8",
+    "content-hash": "9b4753e5803ebd10b56183a899a28a69",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -367,6 +367,49 @@
                 "mailer"
             ],
             "time": "2017-05-01T15:54:03+00:00"
+        },
+        {
+            "name": "thiagoalessio/tesseract_ocr",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagoalessio/tesseract-ocr-for-php.git",
+                "reference": "2bd8c58cce73d8c6e4914a9a0f44882da872cb47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/thiagoalessio/tesseract-ocr-for-php/2bd8c58cce73d8c6e4914a9a0f44882da872cb47.zip",
+                "reference": "2bd8c58cce73d8c6e4914a9a0f44882da872cb47",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Alessio Pereira",
+                    "email": "thiagoalessio@me.com",
+                    "homepage": "http://thiagoalessio.me"
+                }
+            ],
+            "description": "A wrapper to work with Tesseract OCR inside PHP.",
+            "keywords": [
+                "OCR",
+                "Tesseract",
+                "text recognition"
+            ],
+            "time": "2017-06-03T11:09:19+00:00"
         },
         {
             "name": "yiisoft/yii2",
